@@ -1,0 +1,37 @@
+.social-icon a
+    position: relative
+    display: inline-block
+    width: 4.5rem
+    height: 4.5rem
+    background: transparent
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3)
+    margin: 1.5rem .7rem
+    z-index: 1
+    text-align: center
+    line-height: 6rem
+    transition: .3s
+
+.social-icon a:hover 
+    background: #0ef
+    transform: rotate(135deg)
+    box-shadow: 0 0 0.5rem #0ef, 0 0 1rem #0ef
+
+.social-icon a::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 4rem
+    height: 4rem
+    background: #929498
+    z-index: -1
+
+.social-icon a i 
+    font-size: 2.4rem
+    color: #000 
+    transition: .3s
+
+.social-icon a:hover i 
+    transform: rotate(225deg)
+    color: #0ef
